@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, make_response
 
 app = Flask(__name__)
-FLAG = "byteme{y0u_4r3_1nd33d_w0rthy}"
+FLAG = "owasp{y0u_4r3_1nd33d_w0rthy}"
 
 @app.route('/')
 def home():
@@ -18,4 +18,5 @@ def home():
         return render_template('worthy_ctf_page.html')
 
 if __name__ == '__main__':
+
     app.run(debug=True)
